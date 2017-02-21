@@ -1,0 +1,157 @@
+/*
+Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pricing-Table?list=tags&tag=pricing_table
+*/
+
+/*--------- Font ------------*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*------ utiltity classes -----*/
+.fl{ float:left; }
+.fr{ float: right; }
+
+body {
+    background: #F2F2F2;
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 1;
+    font-size: 16px;    
+}
+
+/*Shared properties*/
+.title, .pt-footer{
+    color: #FEFEFE;
+    text-transform: capitalize;
+    line-height: 2.5;
+    position: relative;
+}
+
+.wrapper {
+	width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.title {
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	padding: 10px 25px;
+	font-size: 1.5em;
+}
+.title:last-child {
+}
+
+.content {
+	background: #FFFFFF;
+	padding: 13px 23px;
+	color: #9C9C9C;
+}
+.content:last-child {
+}
+
+.left-heading {
+	padding: 13px 0px;
+	color: #9C9C9C;
+	font-weight: bold;
+	width: 150px;
+}
+
+table {
+    table-layout:fixed;
+}
+table td {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+td.space {
+	width: 30px;
+}
+
+/*arrow creation*/
+.arrow-bottom {
+	position: relative;
+}
+
+.arrow-bottom:before, .arrow-bottom:after, .pt-footer:before,.pt-footer:after {
+	top: 0;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow-bottom:after,.pt-footer:after {
+	border-color: rgba(136, 183, 213, 0);	
+	border-width: 5px;
+	margin-left: -5px;
+}
+.pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+	border-radius: 0 0 5px 5px;
+}
+.pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+
+.heading h2 {
+	min-height: 1px;
+}
+
+
+/*PERSONAL*/
+.developer.title {        
+    background: #78CFBF;    
+}
+.developer.pt-footer {
+    background: #82DACA;
+}
+.developer.arrow-bottom:after {
+	border-top-color: #82DACA;
+}
+
+/*PROFESSIONAL*/
+.service-provider.title{
+    background: #3EC6E0;
+}
+.service-provider.pt-footer{
+    background: #53CFE9;
+}
+.service-provider.arrow-bottom:after {
+	border-top-color: #53CFE9;
+}
+
+/*BUSINESS*/
+.enterprise.title{
+    background: #E3536C;
+}
+.enterprise.pt-footer {
+    background: #EB6379;
+}
+.enterprise.arrow-bottom:after {
+	border-top-color: #EB6379;
+}
+
+
+
+
