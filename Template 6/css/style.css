@@ -60,6 +60,8 @@ body {
 	background: #FFFFFF;
 	padding: 13px 23px;
 	color: #9C9C9C;
+	text-align: left;
+    line-height: 25px;
 }
 .content:last-child {
 }
@@ -69,17 +71,19 @@ body {
 	color: #9C9C9C;
 	font-weight: bold;
 	width: 150px;
+	text-align: left;
+	line-height: 25px;
 }
 
-table {
+.product-grade table {
     table-layout:fixed;
 }
-table td {
+.product-grade table td {
     width: 300px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-td.space {
+.product-grade td.space {
 	width: 30px;
 }
 
@@ -155,3 +159,69 @@ td.space {
 
 
 
+/* pricing-tier Style */
+.pricing-tier-heading {
+	margin: 100px 0 20px 0;
+	font-weight: bold;
+	text-align: center;
+}
+.pricing-tier {
+	width: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.pricing-tier thead th {
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #82daca;
+    border:1px solid #78cfbf;
+    border-bottom:3px solid #3EC6E0;
+    background-color:#53CFE9;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.pricing-tier thead th:empty {
+    background:transparent;
+    border:none;
+}
+.pricing-tier tbody th {
+    color:#fff;
+    text-shadow:1px 1px 1px #82daca;
+    border:1px solid #78cfbf;
+    border-right:3px solid #3EC6E0;
+	background-color:#53CFE9;
+    padding:0px 10px;
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.pricing-tier tfoot td {
+    color: #53CFE9;
+    font-size:32px;
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.pricing-tier tfoot th {
+    color:#666;
+}
+.pricing-tier tbody td {
+    padding:10px;
+    text-align:center;
+    background-color:rgba(83, 207, 233, 0.11);
+    border: 2px solid rgba(83, 207, 233, 0.11);
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color: #9C9C9C;
+    text-shadow:1px 1px 1px #fff;
+}
