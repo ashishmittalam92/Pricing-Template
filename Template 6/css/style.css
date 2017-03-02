@@ -62,10 +62,20 @@ body {
 	color: #9C9C9C;
 	text-align: left;
     line-height: 25px;
+	position: relative;
 }
 .content:last-child {
 }
 
+.product-grade td.content:not(.arrow-bottom):before {
+    content: '';
+    position: absolute;
+    width: 82%;
+    height: 1px;
+    border-bottom: 1px solid #9C9C9C;
+    top: 0;
+}
+	
 .left-heading {
 	padding: 13px 0px;
 	color: #9C9C9C;
