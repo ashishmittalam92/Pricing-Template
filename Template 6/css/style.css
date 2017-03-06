@@ -67,6 +67,10 @@ body {
 .content:last-child {
 }
 
+.content ul {
+	padding-left: 15px;
+}
+
 .product-grade td.content:not(.arrow-bottom):before {
     content: '';
     position: absolute;
@@ -83,6 +87,7 @@ body {
 	width: 150px;
 	text-align: left;
 	line-height: 25px;
+	font-size: 18px;
 }
 
 .product-grade table {
@@ -171,9 +176,10 @@ body {
 
 /* pricing-tier Style */
 .pricing-tier-heading {
-	margin: 100px 0 20px 0;
+	margin: 100px 0 30px 0;
 	font-weight: bold;
 	text-align: center;
+	font-size: 29px
 }
 .pricing-tier {
 	width: 100%;
